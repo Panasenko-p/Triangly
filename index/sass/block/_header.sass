@@ -1,0 +1,94 @@
+.wrapper
+    margin: 0 auto
+.social-icon
+    list-style-type: none
+    height: 22px
+    display: flex
+    justify-content: flex-end
+    li
+        display: inline-block
+        margin: 0 10px 0 12px
+        a 
+            width: 100%
+            height: 100%
+            img 
+                height: 18px
+.nav 
+    display: grid
+    height: 60px
+    grid-template-columns: 210px auto 20px
+.drobdown-main
+    list-style-type: none
+    visibility: hidden
+    opacity: 0
+    display: block
+    position: absolute
+    border: 1px solid #00aeef
+    border-radius: 3px
+    width: auto
+    height: auto
+    padding-top: 5px 
+    z-index: 999
+    transition: width 3s linear
+    li
+        padding: 3px 5px
+        font-size: 14px
+        color: #000
+        text-decoration: none
+        &:hover
+            background: #00AEEF
+            color: #fff       
+        a
+            &:hover
+                color: #fff 
+.navbar
+    justify-self: end
+    align-self: center
+    font-size: 18px
+    display: flex
+    position: relative
+    .drobdown
+        list-style-type: none
+        padding: 10px 25px
+        width: auto
+        a 
+            font-size: 18px
+            font-weight: 300
+            color: #000
+            text-decoration: none
+            &:hover
+                color:#00AEEF
+        &:hover
+            .drobdown-main
+                visibility: visible
+                opacity: 1             
+.search
+    align-self: center
+    justify-self: center
+    position: relative
+    img
+        width: 16px
+        height: 18px
+    .btn-search
+        cursor: pointer
+        &:hover
+            .text-search
+                visibility: visible 
+                opacity: 1      
+    .text-search
+        visibility: hidden
+        opacity: 0
+        position: absolute
+        padding-left: 10px
+        height: 40px
+        font-size: 18px
+        color: #818285
+        font-weight: 300
+        outline: none
+        border: 1px solid #00aeef
+        margin-top: 20px
+        border-radius: 4px
+        left: -180px
+        top: 20px
+
+
